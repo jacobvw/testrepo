@@ -1,0 +1,13 @@
+alias: fw-ipv4-ioc
+ips-policy:
+- policy-id: b96bff19-a31c-4254-a3f7-6734fc8bca70
+  description: Compromised IPv4
+  source-ips:
+  - ip-address: 172.29.70.51
+  destination-ips:
+  - ip-address: 172.29.70.51
+  report: IPS_REPORT
+  evaluate-against: IPS_EVALUATE_FLOW
+  include-packet: false
+  priority: 999
+  enabled: true
